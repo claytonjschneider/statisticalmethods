@@ -29,3 +29,11 @@
 # b) Change the number of bins -- first use 10, then 20, and finally 25. What differences (if any) can you see between these histograms and your histogram from part (a)?
 # c) Change the starting point to -2, -1.5, and then -1.45 -- and plot a histogram with 25 bins for each. What differences do you see?
 # You can also do this problem by hand if you choose. Some programs might not let you change all these "inputs" - so if all else fails, sketches of histograms by hand will be accepted.
+
+#!/usr/bin/env python3
+
+import matplotlib as plot
+import pandas as pd
+import numpy as np
+
+ingredients = pd.read_csv("~/school/statisticalmethods/hw1/ingredient.csv", index_col=0)
